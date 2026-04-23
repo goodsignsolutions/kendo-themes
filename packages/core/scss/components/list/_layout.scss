@@ -217,11 +217,13 @@
     .k-list-item-text,
     .k-list-header-text,
     .k-list-optionlabel {
-        &::before {
+        &:empty::before {
             content: "";
+            display: inline-block;
             width: 0;
             height: 1lh;
             overflow: hidden;
+            vertical-align: top;
         }
     }
     .k-list-optionlabel {
