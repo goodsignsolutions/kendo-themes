@@ -68,6 +68,27 @@ export default () =>(
                     <ListItem showCheckbox>Checkbox</ListItem>
                 </ListVirtualization>
             </section>
+
+            <span>Static list with an item without text</span>
+            <span>Virtual list with an item without text</span>
+            <span></span>
+            <span></span>
+
+             <section>
+                <ListNormal>
+                    <ListItem>List item</ListItem>
+                    <ListItem hover></ListItem>
+                    <ListItem focus>Focus</ListItem>
+                </ListNormal>
+            </section>
+
+            <section>
+                <ListVirtualization>
+                    <ListItem>List item</ListItem>
+                    <ListItem hover></ListItem>
+                    <ListItem focus>Focus</ListItem>
+                </ListVirtualization>
+            </section>
         </div>
     </>
 );
