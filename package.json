@@ -60,6 +60,7 @@
     "build:tests": "nx run @progress/kendo-themes-html:build:tests",
     "sass": "nx run-many -t sass",
     "sass:dist": "nx run-many -t sass:dist",
+    "sass:dist:copy": "nx run-many -t sass:dist && npx gulp sass:copy",
     "docs": "nx run-many -t docs",
     "docs:check": "npm run docs -- git diff --exit-code -- docs/",
     "test:render-test-pages": "node ./scripts/render-test-pages.mjs",
