@@ -1,0 +1,297 @@
+{
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.14.0/lib/schemas/kendo-swatch.json",
+    "name": "Fluent Main",
+    "product": "kendo",
+    "base": "@progress/kendo-theme-fluent",
+    "version": "5.1.2-dev.7",
+    "previewColors": [
+        "#ffffff",
+        "#faf9f8",
+        "#0078d4",
+        "#979593",
+        "#323130"
+    ],
+    "components": [],
+    "groups": [
+        {
+            "name": "Theme colors",
+            "colorsMap": {
+                "surface-alt": {
+                    "name": "Surface Alt",
+                    "type": "color",
+                    "value": "#F5F8F9"
+                },
+                "primary": {
+                    "name": "Primary",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "primary-hover": {
+                    "name": "Primary Hover",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "primary-on-surface": {
+                    "name": "Primary On Surface",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "primary-subtle": {
+                    "name": "Primary Subtle",
+                    "type": "color",
+                    "value": "#dcecef"
+                },
+                "primary-subtle-hover": {
+                    "name": "Primary Subtle Hover",
+                    "type": "color",
+                    "value": "#dcecef"
+                }
+            }
+        },
+        {
+            "name": "List",
+            "variables": {
+                "kendo-list-item-icon-text": {
+                    "name": "List item icon text",
+                    "type": "color",
+                    "value": "#323130"
+                }
+            }
+        },
+        {
+            "name": "Table",
+            "variables": {
+                "kendo-table-header-bg": {
+                    "name": "Table header background color",
+                    "type": "color",
+                    "value": "#FFFFFF"
+                }
+            }
+        },
+        {
+            "name": "Grid",
+            "variables": {
+                "kendo-grid-bg": {
+                    "name": "Grid background color",
+                    "type": "color",
+                    "value": "#FFFFFF"
+                },
+                "kendo-grid-header-font-weight": {
+                    "name": "Grid header font weight",
+                    "type": "number",
+                    "value": "600"
+                }
+            }
+        },
+        {
+            "name": "TreeView",
+            "variables": {
+                "kendo-treeview-item-selected-bg": {
+                    "name": "Treeview selected item background color",
+                    "type": "color",
+                    "value": "#FFFFFF"
+                },
+                "kendo-treeview-item-selected-text": {
+                    "name": "Treeview selected item text color",
+                    "type": "color",
+                    "value": "#008094"
+                }
+            }
+        },
+        {
+            "name": "Button",
+            "variables": {
+                "kendo-button-md-padding-x": {
+                    "name": "Button horizontal padding",
+                    "type": "number",
+                    "value": "10px"
+                },
+                "kendo-button-font-weight": {
+                    "name": "Button font weight",
+                    "type": "number",
+                    "value": "600"
+                },
+                "kendo-button-border": {
+                    "name": "Button border color",
+                    "type": "color",
+                    "value": "#e5e5e5"
+                },
+                "kendo-button-hover-border": {
+                    "name": "Button border color (hover)",
+                    "type": "color",
+                    "value": "#e5e5e5"
+                },
+                "kendo-button-hover-bg": {
+                    "name": "Button background color (hover)",
+                    "type": "color",
+                    "value": "#dcecef"
+                },
+                "kendo-button-hover-text": {
+                    "name": "Button text color (hover)",
+                    "type": "color",
+                    "value": "#008094"
+                }
+            }
+        },
+        {
+            "name": "Menu",
+            "variables": {
+                "kendo-menu-item-padding-y": {
+                    "name": "Menu item vertical padding",
+                    "type": "number",
+                    "value": "5px"
+                },
+                "kendo-menu-icon-color": {
+                    "name": "Menu icon color",
+                    "type": "color",
+                    "value": "#fafafa"
+                },
+                "kendo-menu-bg": {
+                    "name": "Menu background",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "kendo-menu-text": {
+                    "name": "Menu text",
+                    "type": "color",
+                    "value": "#fafafa"
+                },
+                "kendo-menu-item-hover-text": {
+                    "name": "Menu item text (hover)",
+                    "type": "color",
+                    "value": "#fafafa"
+                },
+                "kendo-menu-item-hover-bg": {
+                    "name": "Menu item bg (hover)",
+                    "type": "color",
+                    "value": "#1A8FA3"
+                },
+                "kendo-menu-item-active-bg": {
+                    "name": "Menu item bg (active)",
+                    "type": "color",
+                    "value": "#008094"
+                }
+            }
+        },
+        {
+            "name": "Card",
+            "variables": {
+                "kendo-card-font-size": {
+                    "name": "Card font size",
+                    "type": "number",
+                    "value": "11.2px"
+                }
+            }
+        },
+        {
+            "name": "Tabstrip",
+            "variables": {
+                "kendo-tabstrip-wrapper-padding-x": {
+                    "name": "Padding around tabstrip",
+                    "type": "number",
+                    "value": "0px"
+                },
+                "kendo-tabstrip-wrapper-padding-y": {
+                    "name": "Padding around tabstrip",
+                    "type": "number",
+                    "value": "0px"
+                },
+                "kendo-tabstrip-item-text": {
+                    "name": "Tab text (inactive)",
+                    "type": "color",
+                    "value": "#71717A"
+                },
+                "kendo-tabstrip-item-hover-text": {
+                    "name": "Tab text (hovered)",
+                    "type": "color",
+                    "value": "#18181B"
+                },
+                "kendo-tabstrip-item-gap": {
+                    "name": "Tab gap",
+                    "type": "number",
+                    "value": "1rem"
+                },
+                "kendo-tabstrip-border-width": {
+                    "name": "Tab border",
+                    "type": "number",
+                    "value": "0px"
+                },
+                "kendo-tabstrip-content-border-width": {
+                    "name": "Tab content border",
+                    "type": "number",
+                    "value": "0px"
+                },
+                "kendo-tabstrip-item-border-width": {
+                    "name": "Tab item border",
+                    "type": "number",
+                    "value": "1px"
+                },
+                "kendo-tabstrip-item-selected-bg": {
+                    "name": "Tab border (selected)",
+                    "type": "color",
+                    "value": "#DEEBEE"
+                },
+                "kendo-tabstrip-item-selected-border": {
+                    "name": "Tab border (selected)",
+                    "type": "color",
+                    "value": "#B2D9DF"
+                },
+                "kendo-tabstrip-item-selected-font-weight": {
+                    "name": "Tab selected item font weight",
+                    "type": "number",
+                    "value": "400"
+                },
+                "kendo-tabstrip-indicator-size": {
+                    "name": "Tabstrip indicator",
+                    "type": "number",
+                    "value": "0px"
+                },
+                "kendo-tabstrip-item-border-radius": {
+                    "name": "Tab item corner radius",
+                    "type": "number",
+                    "value": "8px"
+                },
+                "kendo-tabstrip-content-focus-border": {
+                    "name": "Focus ring width",
+                    "type": "number",
+                    "value": "0px"
+                },
+                "kendo-tabstrip-item-focus-shadow": {
+                    "name": "Focus ring color",
+                    "type": "number",
+                    "value": "0px"
+                },
+                "kendo-tabstrip-md-item-padding-x": {
+                    "name": "Padding around tabstrip item",
+                    "type": "number",
+                    "value": "10px"
+                },
+                "kendo-tabstrip-md-item-padding-y": {
+                    "name": "Padding around tabstrip item",
+                    "type": "number",
+                    "value": "6px"
+                }
+            }
+        },
+        {
+            "name": "Window",
+            "variables": {
+                "kendo-window-bg": {
+                    "name": "Bg color",
+                    "type": "color",
+                    "value": "#F6F8F9"
+                },
+                "kendo-window-titlebar-bg": {
+                    "name": "Bg color",
+                    "type": "color",
+                    "value": "#F6F8F9"
+                },                
+                "kendo-window-title-font-weight": {
+                    "name": "Window heading font weight",
+                    "type": "number",
+                    "value": "400"
+                }
+            }
+        }
+    ]
+}
