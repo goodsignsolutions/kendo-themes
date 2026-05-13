@@ -66,6 +66,7 @@
     "build:tests": "nx run @progress/kendo-themes-html:build:tests",
     "sass": "nx run-many -t sass",
     "sass:dist": "nx run-many -t sass:dist",
+    "sass:dist:copy": "nx run-many -t sass:dist && npx gulp sass:copy",
     "docs": "nx run-many -t docs",
     "docs:check": "nx run-many -t docs:check",
     "test:html": "npm run test --prefix packages/html",

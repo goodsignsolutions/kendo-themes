@@ -7,11 +7,17 @@ const gulp = require("gulp");
 // Settings
 const paths = {
     sass: {
-        themes: "packages/!(html)",
+        themes: "packages/!(html|nouvelle)",
         theme: "scss/all.scss",
         swatches: "lib/swatches/*.json",
         standalone: "scss/**/_index.scss",
         dist: "dist"
+    },
+    copy: {
+        target: "c:/repos/goodsign/src/GoodSign.Portal/Content/kendo/sass",
+        files: [
+            "fluent-main-gs.css"
+        ]
     }
 };
 
@@ -133,4 +139,41 @@ function sassDist() {
     return Promise.resolve();
 }
 gulp.task("sass:dist", sassDist);
+// #endregion
+
+// #region dist:copy
+function copyDistCssToTarget() {
+    const { target, files } = paths.copy;
+    const themes = globSync( getArg('--theme') || paths.sass.themes );
+    const copied = [];
+    const missing = [];
+
+    fs.mkdirSync( target, { recursive: true } );
+
+    themes.forEach( cwd => {
+        files.forEach( filename => {
+            const src = path.resolve( cwd, paths.sass.dist, filename );
+
+            if ( !fs.existsSync( src ) ) {
+                missing.push( src );
+                return;
+            }
+
+            const dest = path.resolve( target, filename );
+            fs.copyFileSync( src, dest );
+            copied.push( `${src} -> ${dest}` );
+        });
+    });
+
+    if ( copied.length ) {
+        process.stdout.write( `[sass:dist:copy] Copied ${copied.length} file(s):\n` + copied.map( f => `  ${f}` ).join( '\n' ) );
+    }
+
+    if ( missing.length ) {
+        process.stdout.write( `[sass:dist:copy] Skipped ${missing.length} missing file(s):\n` + missing.map( f => `  ${f}` ).join( '\n' ) );
+    }
+
+    return Promise.resolve();
+}
+gulp.task("sass:copy", copyDistCssToTarget);
 // #endregion
