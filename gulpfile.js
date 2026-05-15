@@ -15,8 +15,8 @@ const paths = {
     },
     copy: {
         target: "c:/repos/goodsign/src/GoodSign.Portal/Content/kendo/sass",
-        files: [
-            "fluent-main-gs.css"
+        swatches: [
+            "fluent-main-gs"
         ]
     }
 };
@@ -143,7 +143,7 @@ gulp.task("sass:dist", sassDist);
 
 // #region dist:copy
 function copyDistCssToTarget() {
-    const { target, files } = paths.copy;
+    const { target, swatches } = paths.copy;
     const themes = globSync( getArg('--theme') || paths.sass.themes );
     const copied = [];
     const missing = [];
@@ -151,26 +151,37 @@ function copyDistCssToTarget() {
     fs.mkdirSync( target, { recursive: true } );
 
     themes.forEach( cwd => {
-        files.forEach( filename => {
-            const src = path.resolve( cwd, paths.sass.dist, filename );
+        swatches.forEach( name => {
 
-            if ( !fs.existsSync( src ) ) {
-                missing.push( src );
-                return;
+            // Copy CSS from dist/
+            const cssSrc = path.resolve( cwd, paths.sass.dist, `${name}.css` );
+            if ( !fs.existsSync( cssSrc ) ) {
+                missing.push( cssSrc );
+            } else {
+                const cssDest = path.resolve( target, `${name}.css` );
+                fs.copyFileSync( cssSrc, cssDest );
+                copied.push( `${cssSrc} -> ${cssDest}` );
             }
 
-            const dest = path.resolve( target, filename );
-            fs.copyFileSync( src, dest );
-            copied.push( `${src} -> ${dest}` );
+            // Copy JSON from lib/swatches/
+            const jsonSrc = path.resolve( cwd, "lib/swatches", `${name}.json` );
+            if ( !fs.existsSync( jsonSrc ) ) {
+                missing.push( jsonSrc );
+            } else {
+                const jsonDest = path.resolve( target, `${name}.json` );
+                fs.copyFileSync( jsonSrc, jsonDest );
+                copied.push( `${jsonSrc} -> ${jsonDest}` );
+            }
+
         });
     });
 
     if ( copied.length ) {
-        process.stdout.write( `[sass:dist:copy] Copied ${copied.length} file(s):\n` + copied.map( f => `  ${f}` ).join( '\n' ) );
+        process.stdout.write( `[sass:dist:copy] Copied ${copied.length} file(s):\n` + copied.map( f => `  ${f}` ).join( '\n' ) + '\n' );
     }
 
     if ( missing.length ) {
-        process.stdout.write( `[sass:dist:copy] Skipped ${missing.length} missing file(s):\n` + missing.map( f => `  ${f}` ).join( '\n' ) );
+        process.stdout.write( `[sass:dist:copy] Skipped ${missing.length} missing file(s):\n` + missing.map( f => `  ${f}` ).join( '\n' ) + '\n' );
     }
 
     return Promise.resolve();
