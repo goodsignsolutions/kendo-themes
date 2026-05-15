@@ -79,5 +79,8 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint",
     "*.{css,scss}": "stylelint"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }

@@ -20,3 +20,6 @@ debug.log
 # NX
 .nx/cache
 .nx/workspace-data
+
+# User settings
+.env

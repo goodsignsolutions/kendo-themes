@@ -3,6 +3,7 @@ const path = require("path");
 
 const { globSync } = require("glob");
 const gulp = require("gulp");
+require("dotenv").config();
 
 // Settings
 const paths = {
@@ -14,10 +15,10 @@ const paths = {
         dist: "dist"
     },
     copy: {
-        target: "c:/repos/goodsign/src/GoodSign.Portal/Content/kendo/sass",
-        swatches: [
-            "fluent-main-gs"
-        ]
+        target: process.env.KENDO_COPY_TARGET,
+        swatches: process.env.KENDO_COPY_SWATCHES
+            ? process.env.KENDO_COPY_SWATCHES.split(",").map( s => s.trim() )
+            : []
     }
 };
 
