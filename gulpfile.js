@@ -181,7 +181,7 @@ function copyDistCssToTarget() {
     }
 
     if ( missing.length ) {
-        process.stdout.write( `[sass:dist:copy] Skipped ${missing.length} missing file(s):\n` + missing.map( f => `  ${f}` ).join( '\n' ) + '\n' );
+        // process.stdout.write( `[sass:dist:copy] Skipped ${missing.length} missing file(s):\n` + missing.map( f => `  ${f}` ).join( '\n' ) + '\n' );
     }
 
     return Promise.resolve();
