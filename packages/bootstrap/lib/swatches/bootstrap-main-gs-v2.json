@@ -1,0 +1,352 @@
+{
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.14.0/lib/schemas/kendo-swatch.json",
+    "name": "Bootstrap Main GS v2",
+    "product": "kendo",
+    "base": "@progress/kendo-theme-bootstrap",
+    "version": "5.1.2-dev.7",
+    "previewColors": [
+        "#ffffff",
+        "#f8f9fa",
+        "#0d6efd",
+        "#0a58ca",
+        "#212529"
+    ],
+    "components": [],
+    "groups": [
+        {
+            "name": "Theme colors",
+            "colorsMap": {
+                "primary": {
+                    "name": "Primary",
+                    "type": "color",
+                    "value": "#008094"
+                }
+            }
+        },
+        {
+            "name": "List item",
+            "variables": {
+                "kendo-list-item-focus-shadow": {
+                    "name": "List item focus shadow",
+                    "type": "string",
+                    "value": "none"
+                }
+            }
+        },
+        {
+            "name": "Button",
+            "variables": {
+                "kendo-button-text": {
+                    "name": "Button text color",
+                    "type": "color",
+                    "value": "#292929"
+                },
+                "kendo-button-bg": {
+                    "name": "Button background",
+                    "type": "color",
+                    "value": "#dadada"
+                }
+            }
+        },        
+        {
+            "name": "Dataviz",
+            "variables": {
+                "kendo-series-a": {
+                    "name": "Series A",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "kendo-series-b": {
+                    "name": "Series B",
+                    "type": "color",
+                    "value": "#ff8f43"
+                },
+                "kendo-series-c": {
+                    "name": "Series C",
+                    "type": "color",
+                    "value": "#fcc61a"
+                },
+                "kendo-series-d": {
+                    "name": "Series D",
+                    "type": "color",
+                    "value": "#0ac777"
+                },
+                "kendo-series-e": {
+                    "name": "Series E",
+                    "type": "color",
+                    "value": "#c72f14"
+                },
+                "kendo-series-f": {
+                    "name": "Series F",
+                    "type": "color",
+                    "value": "#ffc0dd"
+                }
+            }
+        },	
+        {
+            "name": "Grid",
+            "variables": {
+                "kendo-grid-border": {
+                    "name": "Grid border",
+                    "type": "color",
+                    "value": "rgba(0,0,0,.1)"
+                },
+                "kendo-grid-header-border": {
+                    "name": "Grid header border",
+                    "type": "color",
+                    "value": "rgba(0,0,0,.1)"
+                }
+            }
+        },
+        {
+            "name": "Window",
+            "variables": {
+                "kendo-window-border-width": {
+                    "name": "Window border hairline",
+                    "type": "number",
+                    "value": "0"
+                },
+                "kendo-window-titlebar-bg": {
+                    "name": "Window titlebar color",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "kendo-window-titlebar-border": {
+                    "name": "Window titlebar border",
+                    "type": "color",
+                    "value": "transparent"
+                },
+                "kendo-window-titlebar-text": {
+                    "name": "Window titlebar text",
+                    "type": "color",
+                    "value": "#fffefb"
+                }
+            }
+        },
+        {
+            "name": "Tabstrip",
+            "variables": {
+                "kendo-tabstrip-wrapper-padding-x": {
+                    "name": "Padding around tabs",
+                    "type": "number",
+                    "value": "5px"
+                },
+                "kendo-tabstrip-wrapper-padding-y": {
+                    "name": "Padding around tabs",
+                    "type": "number",
+                    "value": "5px"
+                },
+                "kendo-tabstrip-item-bg": {
+                    "name": "Tab bg (inactive)",
+                    "type": "color",
+                    "value": "#EFEFEF"
+                },
+                "kendo-tabstrip-item-hover-bg": {
+                    "name": "Tab bg (hovered)",
+                    "type": "color",
+                    "value": "#FAFAFA"
+                },
+                "kendo-tabstrip-item-text": {
+                    "name": "Tab text (inactive)",
+                    "type": "color",
+                    "value": "#292929"
+                },
+                "kendo-tabstrip-item-hover-text": {
+                    "name": "Tab text (hovered)",
+                    "type": "color",
+                    "value": "#141414"
+                },
+                "kendo-tabstrip-item-gap": {
+                    "name": "Tab gap",
+                    "type": "number",
+                    "value": "0.5rem"
+                },
+                "kendo-tabstrip-border": {
+                    "name": "Tab border",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-tabstrip-content-border": {
+                    "name": "Tab content border",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-tabstrip-item-border": {
+                    "name": "Tab item border",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-tabstrip-item-selected-border": {
+                    "name": "Tab border (selected)",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-tabstrip-item-hover-border": {
+                    "name": "Tab border (hovered)",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-tabstrip-border-width": {
+                    "name": "Tab border width",
+                    "type": "number",
+                    "value": "1px"
+                },
+                "kendo-tabstrip-item-selected-font-weight": {
+                    "name": "Tab selected item font weight",
+                    "type": "number",
+                    "value": "400"
+                }
+            }
+        },
+        {
+            "name": "Panelbar",
+            "variables": {
+                "kendo-panelbar-header-bg": {
+                    "name": "Panelbar header bg",
+                    "type": "color",
+                    "value": "#EFEFEF"
+                },
+                "kendo-panelbar-header-text": {
+                    "name": "Panelbar header text color",
+                    "type": "color",
+                    "value": "#292929"
+                },
+                "kendo-panelbar-border": {
+                    "name": "Panelbar border color",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-panelbar-border-width": {
+                    "name": "Panelbar border width",
+                    "type": "number",
+                    "value": "1px"
+                },
+                "kendo-panelbar-header-focus-shadow": {
+                    "name": "Panelbar border width",
+                    "type": "string",
+                    "value": "none"
+                }
+            }
+        },
+        {
+            "name": "Input",
+            "variables": {
+                "kendo-input-text": {
+                    "name": "Input text color",
+                    "type": "color",
+                    "value": "#292929"
+                },
+                "kendo-picker-text": {
+                    "name": "Picker text color",
+                    "type": "color",
+                    "value": "#292929"
+                },
+                "kendo-picker-bg": {
+                    "name": "Input bg color",
+                    "type": "color",
+                    "value": "#fafafa"
+                },
+                "kendo-picker-hover-bg": {
+                    "name": "Input bg color",
+                    "type": "color",
+                    "value": "#fafafa"
+                },
+                "kendo-picker-border": {
+                    "name": "Input border color",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-picker-hover-border": {
+                    "name": "Input border color",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-input-border": {
+                    "name": "Input border color",
+                    "type": "color",
+                    "value": "#BDBDBD"
+                },
+                "kendo-input-disabled-bg": {
+                    "name": "Disabled inputs: Background",
+                    "type": "color",
+                    "value": "#dadada"
+                },
+                "kendo-input-disabled-text": {
+                    "name": "Disabled inputs: Text",
+                    "type": "color",
+                    "value": "#575757"
+                },
+                "kendo-input-disabled-border": {
+                    "name": "Disabled inputs: Border",
+                    "type": "color",
+                    "value": "#bdbdbd"
+                }
+            }
+        },
+        {
+            "name": "Menu",
+            "variables": {
+                "kendo-menu-item-text": {
+                    "name": "Menu item text",
+                    "type": "color",
+                    "value": "#fffefb"
+                },
+				"kendo-menu-item-hover-text": {
+                    "name": "Menu item text (hover)",
+                    "type": "color",
+                    "value": "#d6d6d6"
+                },
+                "kendo-menu-item-hover-bg": {
+                    "name": "Menu item bg (hover)",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "kendo-menu-bg": {
+                    "name": "Menu background",
+                    "type": "color",
+                    "value": "#008094"
+                },
+                "kendo-menu-text": {
+                    "name": "Menu text",
+                    "type": "color",
+                    "value": "#fffefb"
+                }
+            }
+        },
+        {
+            "name": "Card",
+            "variables": {
+                "kendo-card-border": {
+                    "name": "Card border",
+                    "type": "color",
+                    "value": "#CCCCCD"
+                },
+                "kendo-card-border-radius": {
+                    "name": "Card border radius",
+                    "type": "number",
+                    "value": "4px"
+                }
+            }
+        },
+        {
+            "name": "TreeView",
+            "variables": {
+                "kendo-treeview-indent": {
+                    "name": "Tree view indent",
+                    "type": "number",
+                    "value": "20px"
+                }
+            }
+        },
+        {
+            "name": "Notification",
+            "variables": {
+                "kendo-notification-font-size": {
+                    "name": "Notification font size",
+                    "type": "number",
+                    "value": "13px"
+                }
+            }
+        }
+	]
+}
