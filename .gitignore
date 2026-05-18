@@ -27,3 +27,4 @@ tests/_output/*.json
 
 # User settings
 .env
+.claude/settings.local.json
