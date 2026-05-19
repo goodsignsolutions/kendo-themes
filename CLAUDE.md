@@ -43,3 +43,13 @@ KENDO_COPY_SWATCHES=fluent-main-gs,fluent-main-dark-gs
 
 Run `npm run sass:dist:copy` to build and push output to the copy target.
 
+## Troubleshooting
+
+Use Git Bash as the terminal in VS Code — some build scripts rely on bash and will not work correctly in PowerShell or cmd.
+
+If you encounter unexpected build errors (e.g. after switching branches), clear compiled output and retry:
+
+```sh
+npm run clean:dist
+```
+
