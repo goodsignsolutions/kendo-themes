@@ -20,6 +20,11 @@
                     "name": "Primary",
                     "type": "color",
                     "value": "#008094"
+                },
+                "surface": {
+                    "name": "Surface",
+                    "type": "color",
+                    "value": "#FFFFFF"
                 }
             }
         },
