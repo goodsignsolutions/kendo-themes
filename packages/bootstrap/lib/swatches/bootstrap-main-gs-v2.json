@@ -25,6 +25,11 @@
                     "name": "Surface",
                     "type": "color",
                     "value": "#FFFFFF"
+                },
+                "primary-hover": {
+                    "name": "Primary Hover",
+                    "type": "color",
+                    "value": "#1A8FA3"
                 }
             }
         },

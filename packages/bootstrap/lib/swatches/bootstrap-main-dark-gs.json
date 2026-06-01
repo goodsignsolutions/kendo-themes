@@ -119,12 +119,12 @@
                 "primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#00aec7"
+                    "value": "#008094"
                 },
                 "primary-hover": {
                     "name": "Primary Hover",
                     "type": "color",
-                    "value": "#0b5ed7"
+                    "value": "rgba(0, 128, 148, 0.90)"
                 },
                 "primary-active": {
                     "name": "Primary Active",
