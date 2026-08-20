@@ -562,6 +562,16 @@
                     "value": "22px"
                 }
             }
+        },
+        {
+            "name": "Notification",
+            "variables": {
+                "kendo-notification-font-size": {
+                    "name": "Notification font size",
+                    "type": "number",
+                    "value": "11px"
+                }
+            }
         }
     ]
 }
