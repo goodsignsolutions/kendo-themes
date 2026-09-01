@@ -130,6 +130,11 @@
                     "name": "Window titlebar text",
                     "type": "color",
                     "value": "#fffefb"
+                },
+                "kendo-window-bg": {
+                    "name": "Window background color",
+                    "type": "color",
+                    "value": "#f5f8f9"
                 }
             }
         },
@@ -205,6 +210,11 @@
                     "name": "Tab selected item font weight",
                     "type": "number",
                     "value": "400"
+                },
+                "kendo-tabstrip-bg": {
+                    "name": "Tab background color",
+                    "type": "color",
+                    "value": "transparent"
                 }
             }
         },
@@ -355,6 +365,21 @@
                     "name": "Notification font size",
                     "type": "number",
                     "value": "13px"
+                }
+            }
+        },
+        {
+            "name": "Splitter",
+            "variables": {
+                "kendo-splitter-bg": {
+                    "name": "Splitter background color",
+                    "type": "color",
+                    "value": "#f5f8f9"
+                },
+                "kendo-splitbar-bg": {
+                    "name": "Splitbar background color",
+                    "type": "color",
+                    "value": "#f5f8f9"
                 }
             }
         }
