@@ -29,6 +29,11 @@
           "name": "Base",
           "type": "color",
           "value": "#FFFFFF"
+        },
+        "primary-subtle": {
+          "name": "Primary subtle",
+          "type": "color",
+          "value": "#BFD9DE"
         }
       }
     },
@@ -379,6 +384,21 @@
           "name": "Chat bubble border color",
           "type": "color",
           "value": "rgba(0,0,0,.1)"
+        },
+        "kendo-chat-alt-bubble-bg": {
+          "name": "Chat bubble alt background color",
+          "type": "color",
+          "value": "#BFD9DE"
+        },
+        "kendo-chat-alt-bubble-border": {
+          "name": "Chat bubble border color",
+          "type": "color",
+          "value": "rgba(0,0,0,.1)"
+        },
+        "kendo-chat-alt-bubble-text": {
+          "name": "Chat bubble border color",
+          "type": "color",
+          "value": "#212529"
         }
       }
     }
