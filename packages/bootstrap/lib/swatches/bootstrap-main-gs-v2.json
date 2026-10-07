@@ -33,7 +33,7 @@
         "primary-subtle": {
           "name": "Primary subtle",
           "type": "color",
-          "value": "#BFD9DE"
+          "value": "#D9EEF2"
         }
       }
     },
@@ -109,6 +109,11 @@
           "name": "Grid alternating rows background color",
           "type": "color",
           "value": "transparent"
+        },
+        "kendo-grid-selected-bg": {
+          "name": "Grid selected rows background color",
+          "type": "color",
+          "value": "#D9EEF2"
         }
       }
     },
@@ -388,7 +393,7 @@
         "kendo-chat-alt-bubble-bg": {
           "name": "Chat bubble alt background color",
           "type": "color",
-          "value": "#BFD9DE"
+          "value": "#D9EEF2"
         },
         "kendo-chat-alt-bubble-border": {
           "name": "Chat bubble border color",
