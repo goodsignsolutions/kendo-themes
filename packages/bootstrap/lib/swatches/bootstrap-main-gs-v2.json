@@ -288,17 +288,27 @@
         "kendo-menu-item-text": {
           "name": "Menu item text",
           "type": "color",
-          "value": "#212529"
+          "value": "#fffefb"
+        },
+        "kendo-menu-item-hover-text": {
+          "name": "Menu item text (hover)",
+          "type": "color",
+          "value": "#d6d6d6"
+        },
+        "kendo-menu-item-hover-bg": {
+          "name": "Menu item bg (hover)",
+          "type": "color",
+          "value": "#008094"
         },
         "kendo-menu-bg": {
           "name": "Menu background",
           "type": "color",
-          "value": "#FFFFFF"
+          "value": "#008094"
         },
-        "kendo-menu-border-width": {
-          "name": "Menu border width",
-          "type": "number",
-          "value": "1px"
+        "kendo-menu-text": {
+          "name": "Menu text",
+          "type": "color",
+          "value": "#fffefb"
         }
       }
     },
