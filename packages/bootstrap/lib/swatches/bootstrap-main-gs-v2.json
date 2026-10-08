@@ -34,6 +34,11 @@
           "name": "Primary subtle",
           "type": "color",
           "value": "#D9EEF2"
+        },
+        "primary-on-surface": {
+          "name": "Primary On Surface",
+          "type": "color",
+          "value": "#008094"
         }
       }
     },
